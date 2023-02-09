@@ -11,7 +11,7 @@ $(document).ready(function() {
 				weather += "<p>Вологість: " + data.main.humidity + " %</p>";
 				weather += "<p>Швидкість вітру: " + data.wind.speed + " м/с</p>";
 				weather += "<p>Направлення вітра: " + data.wind.deg + " &#176;</p>";
-				weather += "<p><img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png'></p>";
+				weather += "<p><img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png'></p>";
 				$("#weather").html(weather);
 			}
 		});
