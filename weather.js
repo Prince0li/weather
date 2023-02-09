@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$("#submit").click(function() {
 		var city = $("#city").val();
 		$.ajax({
-			url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=5d066958a60d315387d9492393935c19",
+			url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&APPID=5d066958a60d315387d9492393935c19",
 			success: function(data) {
 				var weather = "";
 				weather += "<p>Температура: " + data.main.temp + " &#8451;</p>";
